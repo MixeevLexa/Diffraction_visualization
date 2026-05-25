@@ -58,7 +58,7 @@ class MainWindow(QMainWindow):
         
         # Source group
         src_group = self._make_group("Источник", [
-            ("a", "a (мкм):", "100"),
+            ("a", "a (мкм):", "0"),
         ], combos=[
             ("source_type", "Форма:", ["uniform", "gaussian"]),
         ])
@@ -67,7 +67,7 @@ class MainWindow(QMainWindow):
         # Spectrum group
         spec_group = self._make_group("Спектр", [
             ("lambda_0", "λ₀ (нм):", "550"),
-            ("delta_lambda", "Δλ FWHM (нм):", "0"),
+            ("delta_lambda", "Δλ (нм):", "0"),
         ], combos=[
             ("spectrum_type", "Спектр:", ["mono", "gaussian"]),
         ])
